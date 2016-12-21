@@ -1,0 +1,35 @@
+@startuml
+
+package "Memento pattern" {
+
+  interface Originator
+  interface Memento
+
+  package "Model" {
+
+
+    class ADPWorld {
+      memento() : ADPWorld // deep copy with modified ADPTank deep copy
+      memento:(aMemento : ADPWorld)
+    }
+
+    class ADPTank {
+      memento() : ADPTank
+      memento:(aMemento : ADPTank)
+    }
+  }
+    Originator <|-- ADPWorld
+    Memento <|-- ADPWorld
+
+    note "In Smalltalk all methods are public,\n\
+so method hiding/narrowing is done by context and convention.\n\
+Therefore Memento can be created just by cloning (copying) the model.\n\
+\
+Only restoration has to be a bit more proper,\n\
+as references to existing objects must not be broken (e.g. observers),\n\
+or done so in a predicable fashion.\
+" as N2
+    N2 .. Originator
+    N2 .. Memento
+}
+@enduml

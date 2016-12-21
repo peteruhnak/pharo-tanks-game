@@ -1,0 +1,20 @@
+{
+	"category" : "MI-ADP-Tanks-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"force",
+		"maxForce",
+		"angle",
+		"length",
+		"firingMode",
+		"rotationDirection",
+		"entityFactory" ],
+	"name" : "ADPTurret",
+	"pools" : [
+		 ],
+	"super" : "ADPEntity",
+	"type" : "normal" }

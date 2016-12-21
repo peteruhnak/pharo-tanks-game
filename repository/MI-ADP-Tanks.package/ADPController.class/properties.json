@@ -1,0 +1,16 @@
+{
+	"category" : "MI-ADP-Tanks-Controllers",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model",
+		"engine",
+		"keymap" ],
+	"name" : "ADPController",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

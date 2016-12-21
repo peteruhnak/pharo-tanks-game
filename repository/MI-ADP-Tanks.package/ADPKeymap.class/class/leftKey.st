@@ -1,0 +1,3 @@
+enumeration
+leftKey
+	^ #leftKey

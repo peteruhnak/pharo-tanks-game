@@ -1,0 +1,43 @@
+@startuml
+
+skinparam nodesep 80
+skinparam ranksep 100
+
+package "Observer pattern" {
+
+note "The original (Smalltalk) MVC/Observer pattern is used" as N1
+
+class Object {
+  - dependents : Object[*]
+  + addDependent:(object : Object)
+  + changed:(anAspect : Object)
+  + changed:with:(anAspect : Object, anObject : Object)
+  + update:(anAspect : Object)
+  + update:with:(anAspect : Object, anObject : Object)
+}
+
+package Model {
+  class ADPEntity
+}
+
+package Graphics {
+  class ADPEntityFigure {
+  }
+}
+
+package Controllers {
+  class ADPController
+}
+
+ADPEntity "model" <- ADPEntityFigure
+ADPController -> "model" ADPEntity
+ADPEntityFigure "figure" <- ADPController
+
+Object <|-- ADPEntity
+
+Object <|-- ADPController
+
+Object <|-- ADPEntityFigure
+
+}
+@enduml

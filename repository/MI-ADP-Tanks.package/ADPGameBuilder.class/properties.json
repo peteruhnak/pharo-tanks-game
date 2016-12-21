@@ -1,0 +1,18 @@
+{
+	"category" : "MI-ADP-Tanks-Game",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"entityFactory",
+		"model",
+		"engine",
+		"view",
+		"numberOfTargets" ],
+	"name" : "ADPGameBuilder",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

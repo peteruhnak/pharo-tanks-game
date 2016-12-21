@@ -1,0 +1,54 @@
+@startuml
+
+package "State pattern" {
+
+  note "Many ways to implement switching modes,\n\
+  e.g. providng `firingMode` setter,\n\
+  having a cyclic list of modes, etc." as N1
+
+  package "Model" {
+    class ADPTurret {
+      + switchMode()
+      + singleMode()
+      + doubleMode()
+      + fireProjectiles() : ADPProjectiles[*]
+    }
+
+    note right of ADPTurret::switchMode
+switchMode
+  firingMode nextMode
+    end note
+
+    note right of ADPTurret::fireProjectiles
+fireProjectiles
+  ^ firingMode fireProjectiles
+    end note
+  }
+
+  package "TurretStates" {
+
+  class ADPTurretMode {
+  	{abstract}+ fireProjectiles() : ADPProjectiles[*]
+  	{abstract}+ nextMode()
+  }
+
+  class ADPTurretSingleMode {
+    +fireProjectiles() : ADPProjectiles[*]
+    +textMode() // turret doubleMode
+  }
+
+  class ADPTurretDoubleMode {
+  	- dispersion : Number
+  	+ fireProjectiles() : ADPProjectiles[2]
+  	+ dispersion:(aNumber : Number)
+  	+ nextMode() // turret singleMode
+  }
+
+  ADPTurretMode <|-- ADPTurretSingleMode
+  ADPTurretMode <|-- ADPTurretDoubleMode
+}
+
+ADPTurret "turret" <-> "firingMode" ADPTurretMode
+
+}
+@enduml

@@ -1,0 +1,14 @@
+{
+	"category" : "MI-ADP-Tanks-Controllers",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ADPUserMovementController",
+	"pools" : [
+		 ],
+	"super" : "ADPController",
+	"type" : "normal" }

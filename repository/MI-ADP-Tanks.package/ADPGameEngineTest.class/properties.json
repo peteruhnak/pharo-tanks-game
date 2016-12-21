@@ -1,0 +1,14 @@
+{
+	"category" : "MI-ADP-Tanks-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"engine" ],
+	"name" : "ADPGameEngineTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

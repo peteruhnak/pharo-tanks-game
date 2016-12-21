@@ -1,0 +1,14 @@
+{
+	"category" : "MI-ADP-Tanks-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"controller" ],
+	"name" : "ADPUserMovementControllerTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

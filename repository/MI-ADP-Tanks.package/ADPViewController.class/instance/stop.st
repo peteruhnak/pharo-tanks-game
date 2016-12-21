@@ -1,0 +1,3 @@
+stepping
+stop
+	window delete

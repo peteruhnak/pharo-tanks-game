@@ -1,0 +1,14 @@
+{
+	"category" : "MI-ADP-Tanks-Graphics",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ADPTurretFigure",
+	"pools" : [
+		 ],
+	"super" : "ADPEntityFigure",
+	"type" : "normal" }

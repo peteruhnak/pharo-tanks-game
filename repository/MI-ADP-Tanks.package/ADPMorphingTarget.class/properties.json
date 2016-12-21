@@ -1,0 +1,17 @@
+{
+	"category" : "MI-ADP-Tanks-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"startShape",
+		"endShape",
+		"velocity",
+		"movementStrategy" ],
+	"name" : "ADPMorphingTarget",
+	"pools" : [
+		 ],
+	"super" : "ADPTarget",
+	"type" : "normal" }

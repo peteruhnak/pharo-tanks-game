@@ -1,0 +1,15 @@
+{
+	"category" : "MI-ADP-Tanks-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"entities",
+		"score" ],
+	"name" : "ADPWorld",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

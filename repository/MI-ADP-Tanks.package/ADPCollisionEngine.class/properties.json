@@ -1,0 +1,14 @@
+{
+	"category" : "MI-ADP-Tanks-Game",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model" ],
+	"name" : "ADPCollisionEngine",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

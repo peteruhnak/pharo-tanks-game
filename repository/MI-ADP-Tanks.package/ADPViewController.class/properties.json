@@ -1,0 +1,15 @@
+{
+	"category" : "MI-ADP-Tanks-Controllers",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"view",
+		"window" ],
+	"name" : "ADPViewController",
+	"pools" : [
+		 ],
+	"super" : "ADPController",
+	"type" : "normal" }

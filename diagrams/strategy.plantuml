@@ -1,0 +1,55 @@
+@startuml
+
+package "Strategy pattern" {
+
+package Physics {
+  class ADPVelocity {
+    - speed : Number
+    - direction : Number // angle
+  }
+  note right of ADPVelocity
+    vector representing combination
+    of horizontal and vertical speeds
+  end note
+}
+
+package Model {
+  class ADPProjectile {
+    - position : Point
+    - velocity : ADPVelocity
+    + stepBy:(aTimeDelta : Time)
+  }
+}
+
+package "Movement" {
+
+    note "all strategies are stateless" as N2
+  note "time affects not just position of a projectile,\n\
+  but also its velocity (e.g. due to gravity)" as N1
+
+  class ADPMovementStrategy {
+  	{abstract} + positionAfter:velocity:fromPosition:(aTimeDelta : Time, aVelocity : ADPVector, aPosition : Point) : Point
+  	{abstract} + velocityAfter:velocity:(aTimeDelta : Time, aVelocity : ADPVector) : ADPVelocity
+  }
+
+  class ADPBallisticMovementStrategy {
+  	- gravityCallback : BlockClosure // because gravity can change during runtime
+  	+ velocityAfter:velocity:(aTimeDelta, aVelocity) : ADPVelocity
+  	+ gravityCallback:(aBlock)
+  	+ positionAfter:velocity:fromPosition:(aTimeDelta, aVelocity, aPosition) : Point
+  }
+
+  class ADPDirectMovementStrategy {
+  	+ positionAfter:velocity:fromPosition:(aTimeDelta, aVelocity, aPosition) : Point
+  	+ velocityAfter:velocity:(aTimeDelta, aVelocity) : Velocity
+  }
+
+  ADPMovementStrategy <|-- ADPBallisticMovementStrategy
+  ADPMovementStrategy <|-- ADPDirectMovementStrategy
+
+}
+
+ADPProjectile --> "movementStrategy" ADPMovementStrategy
+
+}
+@enduml

@@ -1,0 +1,14 @@
+{
+	"category" : "MI-ADP-Tanks-Factories",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"gravity" ],
+	"name" : "ADPRealisticFactory",
+	"pools" : [
+		 ],
+	"super" : "ADPEntitiesFactory",
+	"type" : "normal" }

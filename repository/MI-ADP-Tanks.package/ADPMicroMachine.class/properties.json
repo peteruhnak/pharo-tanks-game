@@ -1,0 +1,16 @@
+{
+	"category" : "MI-ADP-Tanks-Machine",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PeterUhnak 12/11/2016 15:02",
+	"instvars" : [
+		"transitions",
+		"state",
+		"callbacks" ],
+	"name" : "ADPMicroMachine",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

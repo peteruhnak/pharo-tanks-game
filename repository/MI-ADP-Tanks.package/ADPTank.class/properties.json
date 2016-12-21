@@ -1,0 +1,17 @@
+{
+	"category" : "MI-ADP-Tanks-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"turret",
+		"shape",
+		"speed",
+		"direction" ],
+	"name" : "ADPTank",
+	"pools" : [
+		 ],
+	"super" : "ADPEntity",
+	"type" : "normal" }

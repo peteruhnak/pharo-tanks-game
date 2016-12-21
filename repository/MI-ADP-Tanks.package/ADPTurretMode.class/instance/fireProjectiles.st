@@ -1,0 +1,3 @@
+actions
+fireProjectiles
+	^ self subclassResponsibility

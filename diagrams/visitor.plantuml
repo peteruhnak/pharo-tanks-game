@@ -1,0 +1,36 @@
+@startuml
+
+package "Visitor pattern" {
+
+package Model {
+  class ADPEntity {
+    +accept:(aVisitor)
+  }
+  class ADPTank {
+    +accept:(aVisitor)
+  }
+
+  ADPEntity <|-- ADPTank
+
+  note left of ADPTank::accept:
+  accept: aVisitor
+    visitor visitTank: self
+  end note
+}
+
+package "Visitor" {
+  class ADPGraphicsVisitor {
+    +visit:(aModel : ADPEntityFigure)
+    +visitTank:(aTank : ADPTank)
+    +...()
+  }
+
+  note right of ADPGraphicsVisitor::visit:
+  visit: aModel
+    aModel accept: self
+  end note
+}
+
+@enduml
+
+}

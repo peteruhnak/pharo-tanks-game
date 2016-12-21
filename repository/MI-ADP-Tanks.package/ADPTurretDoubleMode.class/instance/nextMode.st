@@ -1,0 +1,3 @@
+actions
+nextMode
+	^ turret singleMode

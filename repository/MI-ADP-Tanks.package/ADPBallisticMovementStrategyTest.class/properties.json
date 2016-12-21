@@ -1,0 +1,14 @@
+{
+	"category" : "MI-ADP-Tanks-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"strategy" ],
+	"name" : "ADPBallisticMovementStrategyTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

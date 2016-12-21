@@ -1,0 +1,14 @@
+{
+	"category" : "MI-ADP-Tanks-Movement",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"gravityCallback" ],
+	"name" : "ADPBallisticMovementStrategy",
+	"pools" : [
+		 ],
+	"super" : "ADPMovementStrategy",
+	"type" : "normal" }

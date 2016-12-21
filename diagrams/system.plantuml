@@ -1,0 +1,68 @@
+@startuml
+
+skinparam nodesep 80
+skinparam ranksep 100
+
+package "Game" {
+
+  interface Steppable {
+    +start()
+    +step() {deprecated}
+    +stop()
+  }
+
+
+  class ADPCollisionEngine <<Steppable>> {
+    every tick checks for collisions
+  }
+
+  class ADPController {
+
+  }
+
+  Steppable <|.. ADPCollisionEngine
+  Steppable <|.. ADPController
+
+
+  class ADPGameEngine {
+    - model : ADPWorld
+    - steppingItems : Steppable
+    - running : Boolean
+    - tick : Time = 1000/60 ms // ~60 FPS
+    - lastStep : Time
+    + addSteppingItem(Steppable)
+    + removeSteppingItem(Steppable)
+    + start()
+    + performStep()
+    + stop()
+  }
+
+  note bottom of ADPGameEngine
+    Only game engine knows the current time.
+    Each step (~16ms) engine informs all entities
+    how much time has passed via `stepBy(aTime)`,
+    and they will move/rotate/etc. accordingly
+  end note
+
+  class ADPGameBuilder {
+    - entityFactory : ADPEntitiesFactory
+    + addView() {optional}
+    + addUserControls() {optional}
+    + addInfoBox() {optional}
+    + addTargets:(aNumber : Number) {optional}
+    + memento:() {optional}
+    + simplisticMode()
+    + realisticMode()
+    + build() : ADPGameEngine
+  }
+
+package "Model" {
+  class ADPEntity {
+    +stepBy:(aTime : Time)
+  }
+}
+
+}
+
+
+@enduml

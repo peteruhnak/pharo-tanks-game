@@ -1,0 +1,15 @@
+{
+	"category" : "MI-ADP-Tanks-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"position",
+		"uuid" ],
+	"name" : "ADPEntity",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "MI-ADP-Tanks-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"keymap" ],
+	"name" : "ADPKeymapTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

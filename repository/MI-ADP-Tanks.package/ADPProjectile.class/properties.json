@@ -1,0 +1,17 @@
+{
+	"category" : "MI-ADP-Tanks-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"velocity",
+		"weight",
+		"movementStrategy",
+		"isDestroyed" ],
+	"name" : "ADPProjectile",
+	"pools" : [
+		 ],
+	"super" : "ADPEntity",
+	"type" : "normal" }

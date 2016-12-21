@@ -1,0 +1,18 @@
+{
+	"category" : "MI-ADP-Tanks-Game",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model",
+		"steppingItems",
+		"running",
+		"tick",
+		"lastStep" ],
+	"name" : "ADPGameEngine",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

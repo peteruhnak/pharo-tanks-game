@@ -1,0 +1,3 @@
+enumeration
+fireKey
+	^ #fireKey

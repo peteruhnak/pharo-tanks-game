@@ -1,0 +1,12 @@
+SystemOrganization addCategory: #'MI-ADP-Tanks'!
+SystemOrganization addCategory: 'MI-ADP-Tanks-Controllers'!
+SystemOrganization addCategory: 'MI-ADP-Tanks-Factories'!
+SystemOrganization addCategory: 'MI-ADP-Tanks-Game'!
+SystemOrganization addCategory: 'MI-ADP-Tanks-Graphics'!
+SystemOrganization addCategory: 'MI-ADP-Tanks-Machine'!
+SystemOrganization addCategory: 'MI-ADP-Tanks-Model'!
+SystemOrganization addCategory: 'MI-ADP-Tanks-Movement'!
+SystemOrganization addCategory: 'MI-ADP-Tanks-Physics'!
+SystemOrganization addCategory: 'MI-ADP-Tanks-Tests'!
+SystemOrganization addCategory: 'MI-ADP-Tanks-TurretStates'!
+SystemOrganization addCategory: 'MI-ADP-Tanks-Visitor'!

@@ -1,0 +1,14 @@
+{
+	"category" : "MI-ADP-Tanks-TurretStates",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dispersion" ],
+	"name" : "ADPTurretDoubleMode",
+	"pools" : [
+		 ],
+	"super" : "ADPTurretMode",
+	"type" : "normal" }

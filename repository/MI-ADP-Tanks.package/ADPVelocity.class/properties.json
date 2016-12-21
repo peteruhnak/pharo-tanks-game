@@ -1,0 +1,15 @@
+{
+	"category" : "MI-ADP-Tanks-Physics",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"speed",
+		"direction" ],
+	"name" : "ADPVelocity",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

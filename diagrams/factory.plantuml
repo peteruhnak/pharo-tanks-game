@@ -1,0 +1,42 @@
+@startuml
+
+package "Factory pattern" {
+
+  package "Factories" {
+
+class ADPEntitiesFactory {
+	+ newProjectileFrom:(aTurret : ADPTurret) : ADPProjectile
+	+ newTarget() : ADPTarget
+	+ randomRectangle() : Rectangle
+	+ randomPosition() : Point
+	+ gravity() : Number
+	+ gravity:(aGravity : Number)
+}
+
+class ADPSimplisticFactory {
+	+ newProjectileFrom:(aTurret) : ADPProjectile
+	+ newTarget() : ADPTarget
+}
+
+note right of ADPSimplisticFactory::newProjectileFrom
+with ADPDirectMovementStrategy
+end note
+
+note right of ADPRealisticFactory::newProjectileFrom:
+with ADPBallisticMovementStrategy
+end note
+
+class ADPRealisticFactory {
+	- gravity : Number[0..1]
+	+ defaultGravity() : -9.81
+	+ newProjectileFrom:(aTurret) : ADPProjectile
+	+ newTarget() : ADPMorphingTarget
+}
+
+
+ADPEntitiesFactory <|- ADPSimplisticFactory
+ADPEntitiesFactory <|-- ADPRealisticFactory
+
+}
+}
+@enduml

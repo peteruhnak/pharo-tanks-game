@@ -1,0 +1,42 @@
+@startuml
+actor User as u
+control System as sys
+participant Keymap as key
+participant ADPUserMovementController as c
+participant ADPTank as e
+participant ADPTankFigure as f
+control Engine
+
+group event registrations
+f -> e : addDependent:(self)
+c -> key : registerTo(#leftKey)
+end
+
+...
+
+group user action propagation
+u -> sys : press "A" key
+sys -> key : keyDown:(#A)
+key -> c : callback:(#leftKey)
+c -> e : direction:(-1)
+end
+...
+
+group moving element and the figure for a specific time amount
+Engine -> Engine : tick()
+Engine -> e : stepBy(aTime)
+e -> e : position:(speed * direction * time)
+e -> e : changed:(#position)
+activate e
+rnote over e
+  propagating
+  to observers
+endrnote
+e -> e : updateDependents()
+e -> f : update:(#position)
+deactivate e
+f -> e : position()
+f -> f : updatePosition()
+end
+
+@enduml

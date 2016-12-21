@@ -1,0 +1,18 @@
+{
+	"category" : "MI-ADP-Tanks-Controllers",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PeterUhnak 12/19/2016 09:47",
+	"instvars" : [
+		"keymap",
+		"inputSource",
+		"pressedKeys",
+		"pressedCallbacks",
+		"releasedCallbacks" ],
+	"name" : "ADPKeymap",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

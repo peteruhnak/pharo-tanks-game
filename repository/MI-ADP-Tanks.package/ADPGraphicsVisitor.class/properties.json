@@ -1,0 +1,14 @@
+{
+	"category" : "MI-ADP-Tanks-Visitor",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "PeterUhnak 10/31/2016 22:21",
+	"instvars" : [
+		"view" ],
+	"name" : "ADPGraphicsVisitor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

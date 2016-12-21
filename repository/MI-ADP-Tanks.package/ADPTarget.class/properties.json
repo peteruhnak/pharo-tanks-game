@@ -1,0 +1,15 @@
+{
+	"category" : "MI-ADP-Tanks-Model",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"shape",
+		"isDestroyed" ],
+	"name" : "ADPTarget",
+	"pools" : [
+		 ],
+	"super" : "ADPEntity",
+	"type" : "normal" }

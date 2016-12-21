@@ -1,0 +1,57 @@
+@startuml
+
+skinparam nodesep 60
+
+package "Model" {
+
+class ADPEntity {
+	- position : Point
+  {abstract} + stepBy:(aTime : Time)
+}
+
+class ADPMorphingTarget {
+	- velocity : Velocity
+}
+
+class ADPTurret {
+	- force : Number
+	- maxForce : Number
+	- angle : Number
+	- length : Number
+	- firingMode : ADPTurretMode
+	- rotationDirection : Number
+}
+
+class ADPTank {
+	- turret : ADPTurret
+	- speed : Number
+	- direction : ADPVector
+}
+
+class ADPWorld {
+	- entities : ADPEntity[*]
+	- score : Number
+}
+
+class ADPProjectile {
+	- velocity : Vector
+	- movementStrategy : ADPMovementStrategy
+}
+
+class ADPTarget {
+	- shape : Shape
+}
+
+ADPEntity "entites" <- ADPWorld
+ADPTurret "turret" <- ADPTank
+
+ADPTarget <|-- ADPMorphingTarget
+ADPEntity <|-- ADPTurret
+ADPEntity <|-- ADPTank
+ADPEntity <|-- ADPProjectile
+ADPEntity <|-- ADPTarget
+
+
+@enduml
+
+}

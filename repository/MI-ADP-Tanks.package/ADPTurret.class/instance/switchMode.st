@@ -1,0 +1,3 @@
+actions
+switchMode
+	firingMode nextMode
