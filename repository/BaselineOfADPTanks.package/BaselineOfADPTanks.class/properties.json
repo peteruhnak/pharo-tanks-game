@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfADPTanks",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfADPTanks",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }
